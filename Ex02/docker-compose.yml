@@ -5,22 +5,13 @@ services:
     build: .
     ports:
       - 5001:80
-    environment:
-      - url1=http://node2:80
-      - url2=http://node3:80
 
   node2:
     build: .
     ports:
       - 5002:80
-    environment:
-      - url1=http://1:80
-      - url2=http://3:80
 
   node3:
     build: .
     ports:
       - 5003:80
-    environment:
-      - url1=http://1:80
-      - url2=http://2:80

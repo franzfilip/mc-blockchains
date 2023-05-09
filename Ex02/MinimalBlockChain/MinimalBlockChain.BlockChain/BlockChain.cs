@@ -25,6 +25,7 @@ namespace MinimalBlockChain.BlockChain
 
         public BlockChain()
         {
+            nodes = new();
             chain = new List<Block>();
             currentTransactions = new List<Transaction>();
             NodeIdentifier = Guid.NewGuid().ToString().Replace("-", "");

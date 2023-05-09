@@ -1,0 +1,103 @@
+### Add Transactions to first node
+POST /transactions/new HTTP/1.1
+Host: localhost:5001
+Content-Type: application/json
+Content-Length: 81
+
+{
+    "Sender": "franzfilip",
+    "Recipient": "finanzamt",
+    "Amount": 5
+}
+
+### Add Transactions to first node
+POST /transactions/new HTTP/1.1
+Host: localhost:5001
+Content-Type: application/json
+Content-Length: 81
+
+{
+    "Sender": "notme",
+    "Recipient": "dubiosesgeschaeft",
+    "Amount": 10
+}
+
+### Mine new block
+GET /mine HTTP/1.1
+Host: localhost:5001
+
+### Show chain
+GET /chain HTTP/1.1
+Host: localhost:5001
+
+### Validate health
+GET /chainhealth HTTP/1.1
+Host: localhost:5001
+
+### Add Transactions to first node
+POST /transactions/new HTTP/1.1
+Host: localhost:5001
+Content-Type: application/json
+Content-Length: 81
+
+{
+    "Sender": "franzfilip",
+    "Recipient": "keindubiosesgeschaeft",
+    "Amount": 1
+}
+
+### Mine new block
+GET /mine HTTP/1.1
+Host: localhost:5001
+
+### Show chain
+GET /chain HTTP/1.1
+Host: localhost:5001
+
+### Register nodes at node 1
+POST /nodes/register HTTP/1.1
+Host: localhost:5001
+Content-Type: application/json
+
+{
+  "nodes": [
+    "http://node2:80",
+    "http://node3:80"
+  ]
+}
+
+### Register nodes at node 2
+POST /nodes/register HTTP/1.1
+Host: localhost:5002
+Content-Type: application/json
+
+{
+  "nodes": [
+    "http://node1:80",
+    "http://node3:80"
+  ]
+}
+
+### Register nodes at node 3
+POST /nodes/register HTTP/1.1
+Host: localhost:5003
+Content-Type: application/json
+
+{
+  "nodes": [
+    "http://node1:80",
+    "http://node2:80"
+  ]
+}
+
+### Nodes resolve for node 1
+GET /nodes/resolve HTTP/1.1
+Host: localhost:5001
+
+### Nodes resolve for node 2
+GET /nodes/resolve HTTP/1.1
+Host: localhost:5002
+
+### Nodes resolve for node 3
+GET /nodes/resolve HTTP/1.1
+Host: localhost:5003
