@@ -10,7 +10,7 @@ namespace MinimalBlockChain.BlockChain {
         public int Index { get; set; }
         public long Timestamp { get; set; }
         public List<Transaction> Transactions { get; set; }
-        public string Proof { get; set; } //what exactly should the prove be ?
+        public int Proof { get; set; }
         public string PreviousHash { get; set; }
     }
 }

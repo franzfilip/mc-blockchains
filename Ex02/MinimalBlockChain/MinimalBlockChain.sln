@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBlockChain", "MinimalBlockChain\MinimalBlockChain.csproj", "{EA7A87BE-BF19-49D0-A5F6-1A4DEB35A0A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalBlockChain", "MinimalBlockChain\MinimalBlockChain.csproj", "{EA7A87BE-BF19-49D0-A5F6-1A4DEB35A0A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBlockChain.BlockChain", "MinimalBlockChain.BlockChain\MinimalBlockChain.BlockChain.csproj", "{72884EAA-17C8-4080-BC60-E2B2B5651E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalBlockChain.BlockChain", "MinimalBlockChain.BlockChain\MinimalBlockChain.BlockChain.csproj", "{72884EAA-17C8-4080-BC60-E2B2B5651E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBlockChain.Utility", "MinimalBlockChain.Utility\MinimalBlockChain.Utility.csproj", "{A8E9D732-8550-47A9-A69B-5F6368C3FFEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalBlockChain.REST", "MinimalBlockChain.REST\MinimalBlockChain.REST.csproj", "{03A6B8CA-0FF7-4E90-8486-28DA7D291687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{72884EAA-17C8-4080-BC60-E2B2B5651E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72884EAA-17C8-4080-BC60-E2B2B5651E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72884EAA-17C8-4080-BC60-E2B2B5651E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E9D732-8550-47A9-A69B-5F6368C3FFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E9D732-8550-47A9-A69B-5F6368C3FFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E9D732-8550-47A9-A69B-5F6368C3FFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E9D732-8550-47A9-A69B-5F6368C3FFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A6B8CA-0FF7-4E90-8486-28DA7D291687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A6B8CA-0FF7-4E90-8486-28DA7D291687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A6B8CA-0FF7-4E90-8486-28DA7D291687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A6B8CA-0FF7-4E90-8486-28DA7D291687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
