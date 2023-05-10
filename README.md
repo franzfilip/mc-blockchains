@@ -1,9 +1,8 @@
+# HashCash
 # Minimal BlockChain
 
 ## Umsetzung
 Die Übung wurde mit .NET 6 umgesetzt.
-
-[Link zum Repo](https://github.com/franzfilip/mc-blockchains).
 
 ## Funktionalitäten
 Jeder Node hat Zugriff auf die folgenden Funktionalitäten:
